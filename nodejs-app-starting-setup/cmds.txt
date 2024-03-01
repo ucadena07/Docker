@@ -1,0 +1,9 @@
+docker build .
+docker run [key]
+docker ps --> shows running services 
+docker stop [container_name]
+docker run -p 3000:80 [key]
+
+
+EXPOSE key at docker file is for documentation only 
+
