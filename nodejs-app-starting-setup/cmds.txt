@@ -6,4 +6,8 @@ docker run -p 3000:80 [key]
 
 
 EXPOSE key at docker file is for documentation only 
-
+Docker images are readonly.. must rebuild the image if changes are made to the application.
+docker attach [container_name] -> starts an existing container attach
+docker start [container_name] -> starts an existing container detach 
+docker run -p 3000:80 -d sha256:82c3778576ddfa306e6901985012842be80a6def7c60a9045c5cbc6ea8351553 -> starts an existing container detach 
+docker logs [container_name] -> see all logs entered in container
