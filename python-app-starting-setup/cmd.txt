@@ -1,0 +1,2 @@
+docker run -i -t [key]
+docker start -a -i [container_name]
