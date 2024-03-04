@@ -16,7 +16,21 @@ docker rm [name] [name] [name]
 //displays images
 docker images
 docker rmi [image_name]
-docker image prune -> remove all images not being used by a container
+docker image prune -a -> remove all images not being used by a container
+
+//Naming container
+docker run -p 3000:80 -d --rm --name goalsapp sha256:662292747995b853ed1ad50983657d47091611c68b8d318a1eecd32e8f09a1cd
+
+//Naming images
+docker build -t [name]:lastest .
+
+
+//Rename an image 
+docker tag [old_name] [new_name]
+
+//pushing images to dockers repo
+docker push [image_name]
+docker pull [image_name]
 
 EXPOSE key at docker file is for documentation only 
 Docker images are readonly.. must rebuild the image if changes are made to the application.
