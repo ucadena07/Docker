@@ -1,2 +1,11 @@
 Volumes and Annonymus Volumes 
 docker run -d -p 3000:80 --rm --name feedback-app -v "C:\Users\ucade_lbz6a\Documents\Docker\data-volumes-01-starting-setup:/app" -v /app/node_modules feedback-node:volumes
+
+//list volumes
+docker volume ls 
+
+//create volume with a name
+docker volume create [volume_name]
+
+//inspect volume
+docker volume inspect [volume_name]
