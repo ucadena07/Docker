@@ -9,3 +9,9 @@ docker volume create [volume_name]
 
 //inspect volume
 docker volume inspect [volume_name]
+
+//environment variables
+docker run -d -p 3000:8000 --env PORT=8000 --rm --name feedback-app -v "C:\Users\ucade_lbz6a\Documents\Docker\data-volumes-01-starting-setup:/app" -v /app/node_modules feedback-node:env
+
+//environment variables with file
+docker run -d -p 3000:8000 --env-file ./.env --rm --name feedback-app -v "C:\Users\ucade_lbz6a\Documents\Docker\data-volumes-01-starting-setup:/app" -v /app/node_modules feedback-node:env
